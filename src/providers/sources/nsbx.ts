@@ -19,7 +19,7 @@ async function comboScraper(ctx: ShowScrapeContext | MovieScrapeContext): Promis
     query.episode = ctx.media.episode.number.toString();
   }
 
-  const result = await ctx.fetcher(`https://api.nsbx.ru/search?query=${encodeURIComponent(JSON.stringify(query))}`);
+  const result = await ctx.fetcher(`https://proxxxy.swittys-scrap.workers.dev/?url=https://api.nsbx.ru/search?query=${encodeURIComponent(JSON.stringify(query))}`);
 
   if (result.embeds.length === 0) throw new NotFoundError('No watchable item found');
 
