@@ -6,7 +6,7 @@ export const deltaScraper = makeEmbed({
   rank: 200,
   disabled: false,
   async scrape(ctx) {
-    const url = `https://api.nsbx.ru/provider?resourceId=${encodeURIComponent(ctx.url)}&provider=delta`;
+    const url = `https://proxxxy.swittys-scrap.workers.dev/?url=https://api.nsbx.ru/provider?resourceId=${encodeURIComponent(ctx.url)}&provider=delta`;
     const result = await ctx.fetcher(url);
 
     return result as EmbedOutput;
