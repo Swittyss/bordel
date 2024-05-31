@@ -111,6 +111,5 @@ export function gatherAllEmbeds(): Array<Embed> {
     warezcdnembedHlsScraper,
     warezcdnembedMp4Scraper,
     bflixScraper,
-    Scraper,
   ];
 }
